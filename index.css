@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Story+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 html, body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .navbar-brand{
@@ -11,8 +13,16 @@ html, body{
     font-style: normal;
 }
 
+.jampasir{
+    margin-top: -1%;
+    margin-left: 82.5%;
+    position: absolute;
+    z-index: -1;
+}
+
 .content{
-    margin-top: 25%;
+    margin-top: 18%;
+    margin-bottom: 5%;
     width: 100%;
     height: 500px;
 }
@@ -52,6 +62,7 @@ html, body{
 }
 
 .about img{
+    z-index: -2;
     margin-left: 180px;
     width: 550px;
     text-align: right;
@@ -66,11 +77,40 @@ html, body{
     margin-left: 180px;
     margin-right: 180px;
     margin-bottom: 180px;
+    
+}
+
+.project h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 80px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.bosProject{
     gap: 100px;
     display: flex;
 }
 
+.bosProject h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+}
+
 .box1{
+    width: 380px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1),     /* shadow utama lembut */
+        0 15px 45px rgba(0, 0, 0, 0.08),   /* tambahan bayangan halus */
+        0 0 30px rgba(180, 180, 180, 0.3); /* efek abu jernih */
+    transition: all 0.4s ease;
     text-align: center;
     width: 100%;
 }
@@ -88,15 +128,36 @@ html, body{
     border: 1px solid black;
     height: 50px;
     width: 100%;
+    border-radius: 15px;
+}
+
+.BTNP:hover{
+    background-color: black;
+    color: white;
 }
 
 .BTNPP{
     border: 1px solid black;
     height: 50px;
     width: 100%;
+    border-radius: 15px;
+}
+
+.BTNPP:hover{
+    background-color: black;
+    color: white;
 }
 
 .box2{
+    width: 380px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1),     /* shadow utama lembut */
+        0 15px 45px rgba(0, 0, 0, 0.08),   /* tambahan bayangan halus */
+        0 0 30px rgba(180, 180, 180, 0.3); /* efek abu jernih */
+    transition: all 0.4s ease;
     text-align: center;
     width: 100%;
 }
@@ -107,6 +168,15 @@ html, body{
 }
 
 .box3{
+    width: 380px;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.1),     /* shadow utama lembut */
+        0 15px 45px rgba(0, 0, 0, 0.08),   /* tambahan bayangan halus */
+        0 0 30px rgba(180, 180, 180, 0.3); /* efek abu jernih */
+    transition: all 0.4s ease;
     text-align: center;
     width: 100%;
 }
@@ -122,6 +192,7 @@ html, body{
 }
 
 .pesan h1{
+    text-decoration: underline;
     margin-bottom: 50px;
 }
 
@@ -141,10 +212,12 @@ input{
 }
 
 .nama{
+    height: 35px;
     width: 500px;
 }
 
 .email{
+    height: 35px;
     width: 500px;
 }
 
@@ -158,9 +231,120 @@ input{
     margin-top: 25px;
     border: 1px solid black;
     margin-bottom: 180px;
+    border-radius: 5px;
 }
 
 .BTNCNT:hover{
     background-color: black;
     color: white;
+}
+
+footer{
+    border-top: 1px solid #333;
+}
+footer h1{
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}
+
+footer span{
+    font-family: "Kaushan Script", cursive;
+    font-weight: 500;
+    font-style: normal;
+}
+
+footer h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.imgg{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 5px;               
+    margin-top: 10px;
+    margin-bottom: 25px;        
+}
+
+.chatgpt{
+    width: 40px;
+}
+
+.claude{
+    width: 120px;
+}
+
+pre{
+    margin-top: -20px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 12.5px;
+    font-weight: 200;
+}
+
+@media (max-width: 768px) {
+    html,body{
+        overflow-x: hidden;
+    }
+    .jampasir{
+        width: 400px;
+        margin-left: 70%;
+    }
+    .content h1{
+        margin-left: 50px;
+    }
+
+    .content p{
+        margin-left: 50px;
+        margin-right: 120px;
+    }
+
+    .contentBtn{
+        margin-left: 50px;
+    }
+
+    .about img{
+        width: 300px;
+        height: 100%;
+        margin-left: 10px;
+    }
+
+    .kanan h1{
+        margin-right: 50px;
+    }
+
+    .project{
+        margin: 0;
+    }
+
+    .bosProject{
+        margin-left: 50px;
+        margin-right: 50px;
+        display: block;
+    }
+
+    .box1{
+        margin: 0 0 50px 0;
+    }
+
+    .box2{
+        margin: 0 0 50px 0;
+    }
+
+    .box3{
+        margin: 0 0 50px 0;
+    }
+
+    .pesan{
+        margin: 0 0 0 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .kanan h1{
+        margin-right: 0;
+    }
 }

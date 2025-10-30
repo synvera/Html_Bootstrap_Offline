@@ -48,13 +48,15 @@
     </div>
   </div>
 </nav>
+<img src="src/Caterina Blume _ Saatchi Art.jpg" alt="Jampasir" class="jampasir">
 <div class="content">
     <h1>Synvera</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <button class="contentBtn">Selengkapnya</button>
+    <button class="contentBtn" id="scrollBtn">Selengkapnya</button>
 </div>
 
-<div class="about">
+
+<div class="about" id="Selengkapnya">
     <img src="src/Logo synvera.jpg" alt="Logo">
     <div class="kanan">
         <h1>Lorem ipsum</h1>
@@ -64,6 +66,8 @@
 </div>
 
 <div class="project">
+    <h1>Project</h1> <br>
+    <div class="bosProject">
     <div class="box1">
         <h1>Lorem ipsum</h1>
         <hr>
@@ -94,6 +98,7 @@
         <button class="BTNPP">Live Demo</button>
         </div>
     </div>
+    </div>
 </div>
 <div class="pesan">
     <h1>Contact</h1>
@@ -107,5 +112,23 @@
         <button class="BTNCNT">Kirim</button>
     </div>
 </div>
+
+<footer>
+    <h1>Created By <span>Synvera</span></h1>
+    <h2>Powered By</h2>
+    <div class="imgg">
+    <img src="src/ChatGPT-Logo.svg.png" alt="Chatgpt" class="chatgpt">
+    <img src="src/Claude_AI_logo.svg.png" alt="Claude" class="claude"> <br>
+</div>
+<pre>Plis percaya</pre>
+</footer>
 </body>
+<script>
+  const scrollBtn = document.getElementById("scrollBtn");
+    scrollBtn.addEventListener("click", () => {
+      document.getElementById("Selengkapnya").scrollIntoView({
+        behavior: "smooth"
+      });
+    });
+</script>
 </html>
